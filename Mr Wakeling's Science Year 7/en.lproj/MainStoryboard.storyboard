@@ -1051,7 +1051,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" id="7JJ-9c-g9T" customClass="SaveButton">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" id="7JJ-9c-g9T">
                                 <rect key="frame" x="551" y="644" width="180" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="18"/>
@@ -1064,7 +1064,6 @@
                                 </state>
                                 <connections>
                                     <action selector="transitionToNewController" destination="fkB-oY-W3r" eventType="touchUpInside" id="aWd-5x-cFk"/>
-                                    <segue destination="EQs-8w-kmh" kind="push" id="gHp-Dc-IQB"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -8891,6 +8890,7 @@
         <class className="AcidsThreeV2ViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/AcidsThreeV2ViewController.h"/>
             <relationships>
+                <relationship kind="action" name="handlePan:" candidateClass="UIGestureRecognizer"/>
                 <relationship kind="outlet" name="bleach" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="cleaner" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="cola" candidateClass="UIButton"/>
